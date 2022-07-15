@@ -14,7 +14,7 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**\
-Reference: https://archive.ics.uci.edu/ml/datasets/bank+marketing\
+Reference: https://archive.ics.uci.edu/ml/datasets/bank+marketing <br />
 As per reference, this dataset contains data about marketing campaigns of a banking institution. We seek to predict if the client would subscribe to a term deposit which is labeled as "y".\
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**\
 The best performing model was a Voting Ensemble model derived from AutoML with accuracy of 0.917.
