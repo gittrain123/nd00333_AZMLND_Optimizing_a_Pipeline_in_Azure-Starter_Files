@@ -20,7 +20,7 @@ As per reference, this dataset contains data about marketing campaigns of a bank
 The best performing model was a Voting Ensemble model derived from AutoML with accuracy of 0.91757.
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**\
-First, the data was downloaded as a TabularData from the given webpath. Thereafter, data preprocessing (i.e. one-hot encoding) was done to prepare the data for model training. Logistic Regression algorithm was used in train.py for classification. The parameters chosen for hyperparameter tuning was C and max_iter. Values of C used for hyperparameter tuning are 0.1, 1, 5, 10 while those for max_iter are 500, 1000, 4000, 10000. RandomParameterSampling was used as the parameter sampler and BanditPolicy was used as the early stopping policy.\ 
+First, the data was downloaded as a TabularData from the given webpath. Thereafter, data preprocessing (i.e. one-hot encoding) was done to prepare the data for model training. Logistic Regression algorithm was used in train.py for classification. The parameters chosen for hyperparameter tuning was C and max_iter. Values of C used for hyperparameter tuning are 0.1, 1, 5, 10 while those for max_iter are 500, 1000, 4000, 10000. RandomParameterSampling was used as the parameter sampler and BanditPolicy was used as the early stopping policy.<br />
 **What are the benefits of the parameter sampler you chose?**\
 RandomParameterSampling can get good results and not as time-consuming as grid sweep.\
 **What are the benefits of the early stopping policy you chose?**\
