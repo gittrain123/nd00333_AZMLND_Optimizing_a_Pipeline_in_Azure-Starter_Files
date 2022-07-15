@@ -38,3 +38,5 @@ For AutoML, the time limit was set to timeout at 30mins which can also be increa
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
+![Screenshot](compute_instance_delete.png)
+![Screenshot](compute_cluster_delete.png)
