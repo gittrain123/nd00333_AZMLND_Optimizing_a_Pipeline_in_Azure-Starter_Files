@@ -55,17 +55,22 @@ def main():
     # Data is located at:
     # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-    ds = ### YOUR CODE HERE ###
+    web_path = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
+
+    ds =TabularDatasetFactory.from_delimited_files(path=web_path)
     
     x, y = clean_data(ds)
 
     # TODO: Split data into train and test sets.
 
-    ### YOUR CODE HERE ###a
+    x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.3, random_state=0)
+    ### YOUR CODE HERE ###
 
     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
+    #joblib.dump(value=model,filename='outputs/model.pkl')
+    #run.upload_file(name='model.pkl', path_or_stream='outputs/model.pkl')
     run.log("Accuracy", np.float(accuracy))
 
 if __name__ == '__main__':
